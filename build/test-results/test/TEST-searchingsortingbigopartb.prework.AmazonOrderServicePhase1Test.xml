@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-05-29T12:45:32" hostname="DESKTOP-URGQT26" time="0.063">
+  <properties/>
+  <testcase name="findPackageLinear_asinFirstItem_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.029"/>
+  <testcase name="findPackageLinear_asinPresent_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.003"/>
+  <testcase name="findPackageLinear_asinLastItem_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.002"/>
+  <testcase name="findPackageLinear_asinPresentOneElementList_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.001"/>
+  <testcase name="findPackageLinear_emptyPackageList_throwsPackageNotFoundException()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.018"/>
+  <testcase name="findPackageLinear_asinNotPresent_throwsPackageNotFoundException()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase1Test" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

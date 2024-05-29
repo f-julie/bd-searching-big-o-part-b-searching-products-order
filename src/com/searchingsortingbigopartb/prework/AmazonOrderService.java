@@ -23,9 +23,18 @@ public class AmazonOrderService {
      * @param asin - The ASIN being searched for.
      * @return the Amazon Package with the target ASIN
      */
-    public AmazonPackage findPackageLinear(String asin) {
+    public AmazonPackage findPackageLinear(String asin) throws PackageNotFoundException {
         // PARTICIPANTS - Implement a linear search for a package matching the requested ASIN
-        return packages.get(0);
+
+        for (int i = 0; i < packages.size(); i++) {
+            if (packages.get(i).getAsin().equals(asin)) {
+                return packages.get(i); // return the AmazonPackage object itself
+            }
+        }
+
+        throw new PackageNotFoundException("Package with ASIN " + asin + " not found.");
+
+        //return packages.get(0);
     }
 
     /**
