@@ -43,8 +43,36 @@ public class AmazonOrderService {
      * @param asin - The ASIN being searched for.
      * @return the Amazon Package with the target ASIN
      */
-    public AmazonPackage findPackageBinary(String asin) {
+    public AmazonPackage findPackageBinary(String asin) throws PackageNotFoundException {
         // PARTICIPANTS - Implement a binary search for a package matching the requested ASIN
-        return packages.get(0);
+
+        int left = 0;
+        int right = packages.size() - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            // Compare ASINs
+            int comparison = packages.get(mid).getAsin().compareTo(asin);
+
+            // If target is present at the mid, return the package
+            if (comparison == 0)
+                return packages.get(mid);
+
+            // If target is greater, ignore left half
+            if (comparison < 0)
+                left = mid + 1;
+
+                // If target is smaller, ignore right half
+            else
+                right = mid - 1;
+        }
+
+        // Target is not present in list
+        throw new PackageNotFoundException("Package with ASIN " + asin + " not found.");
+
+        //return -1;
+
+        //return packages.get(0);
     }
 }

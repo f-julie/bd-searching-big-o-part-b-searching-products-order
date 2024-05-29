@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-05-29T13:00:51" hostname="DESKTOP-URGQT26" time="0.084">
+  <properties/>
+  <testcase name="findPackageBinary_asinLastItem_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.025"/>
+  <testcase name="findPackageBinary_asinNotPresent_throwsPackageNotFoundException()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.01"/>
+  <testcase name="findPackageBinary_manyPackages_significantlyOutperformsFindPackageLinear()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.036"/>
+  <testcase name="findPackageBinary_emptyPackageList_throwsPackageNotFoundException()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.002"/>
+  <testcase name="findPackageBinary_asinFirstItem_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.0"/>
+  <testcase name="findPackageBinary_asinPresent_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.002"/>
+  <testcase name="findPackageBinary_asinPresentOneElementList_returnsCorrectAmazonPackage()" classname="searchingsortingbigopartb.prework.AmazonOrderServicePhase2Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
